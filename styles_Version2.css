@@ -1,0 +1,31 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fafafa;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  color: #333;
+  margin-top: 24px;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin: 32px auto;
+  max-width: 1000px;
+}
+.gallery img {
+  width: 220px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.13);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+}
